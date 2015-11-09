@@ -5,21 +5,21 @@ layout: null
 <feed xmlns="http://www.w3.org/2005/Atom">
 
     <title>Hossein Karami</title>
-    <link href="http://hosseinkarami.com/feed.xml" rel="self" />
-    <link href="http://hosseinkarami.com/" />
+    <link href="http://zahraazizi.ir/feed.xml" rel="self" />
+    <link href="http://zahraazizi.ir/" />
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>http://hosseinkarami.com</id>
+    <id>http://zahraazizi.ir</id>
     <author>
-        <name>Hossein Karami</name>
-        <email>hi@hosseinkarami.com</email>
+        <name>zahra azizi</name>
+        <email>engineerazizi025@gmail.com</email>
     </author>
 
     {% for post in site.posts limit: 10 %}
     <entry>
         <title>{{ post.title }}</title>
-        <link href="http://www.hosseinkarami.com{{ post.url }}" />
+        <link href="http://www.zahraazizi.ir{{ post.url }}" />
         <updated>{{ post.date | date_to_xmlschema }}</updated>
-        <id>http://hosseinkarami.com{{ post.id }}</id>
+        <id>http://zahraazizi.ir{{ post.id }}</id>
         <content type="html">{{ post.content | xml_escape }}</content>
     </entry>
     {% endfor %}
